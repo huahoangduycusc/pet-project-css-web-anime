@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+$main-background: #fff;
+$main-color: #333;
+$hover-color: #f63a3a;
+$second-background: #ddd;
+a{
+    color: #333;
+    transition: all 0.3s ease;
+    &:hover{
+        color: $hover-color;
+    }
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+    border: none;
+}
+header{
+    width: 100%;
+    .header-container{
+        width: 100%;
+        background-color: $main-background;
+        padding: 20px 10px;
+        .header-content{
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .header-logo{
+                img{
+                    width: 100px;
+                }
+            }
+            .nav-container{
+                .nav-menu{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .nav-menu-item{
+                        display: block;
+                        position: relative;
+                        .nav-link{
+                            display: block;
+                            padding: 0 15px;
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            i{
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: 2rem;
+                            }
+                            &:hover{
+                                color: $hover-color;
+                            }
+                        }
+                        .sub-menu{
+                            font-size: 1.5rem;
+                            position: absolute;
+                            padding: 8px 0;
+                            background: #fff;
+                            box-shadow: 1px 3px 3px rgba(190, 190, 190, 0.6);
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: rotateX(-90deg);
+                            list-style: none;
+                            transition: all 0.3s ease;
+                            transform-origin: 0 0;
+                            li{
+                                a{
+                                    display: block;
+                                    margin: 0 20px;
+                                    text-align: left;
+                                    overflow: hidden;
+                                    min-width: 200px;
+                                    padding: 10px 0;
+                                    &:hover{
+                                        color: $hover-color;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            .sub-menu{
+                                opacity: 1;
+                                visibility: visible;
+                                transform: rotateX(0deg);
+                                z-index: 20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.body-content{
+    width: 100%;
+}
+section{
+    padding: 30px 0;
+}
+.box{
+    background-color: $second-background;
+    border-radius: 15px;
+    margin: 15px 0;
+    padding: 20px;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-bg{
+    width: 100%;
+    background-image: url(http://virtus.wgl-demo.net/wp-content/uploads/2020/02/section-bg-13.jpg);
+    background-position: top center;
+    background-size: cover;
+    padding: 15px 0;
+}
+.slides-top-news{
+    .slides-top-new-item{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        .slide-top-new-thumb{
+           img{
+            border-radius: 10px;
+           }
+        }
+        .slide-top-new-overlay{
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            .news-top-title{
+                font-size: 2.6rem;
+                line-height: 1.3;
+            }
+            .news-top-description{
+                display: flex;
+                margin-top: 2rem;
+                p{
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+.carousel-nav-center {
+    position: relative;
+}
+.carousel-nav-center .owl-nav button i {
+    font-size: 4.5rem;
+}
+  
+.carousel-nav-center .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.carousel-nav-center .owl-nav .owl-prev {
+    position: absolute;
+    left: 5px;
+}
+  
+.carousel-nav-center .owl-nav .owl-next {
+    position: absolute;
+    right: 5px;
+}
+.carousel-nav-center .owl-nav .owl-prev.disabled, .carousel-nav-center .owl-nav .owl-next.disabled{
+    display: none;
+}
+.owl-nav button {
+    border: none;
+    outline: none;
+}
+.owl-nav button i {
+    transition: all 0.3s linear;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+  
+.owl-nav button:hover i {
+    background-color: $hover-color;
+    color: #fff;
+}
+.space-empty{
+    height: 30px;
+}
+.box-item{
+    background-color: #212121;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    .box-thumb{
+        width: 140px;
+    }
+    .box-description{
+        padding: 15px 30px;
+        .box-title{
+            margin-bottom: 10px;
+            a{
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: 600;
+                &:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+        .box-more{
+            color: #ddd;
+            display: flex;
+            p{
+                margin-right: 10px;
+            }
+        }
+    }
+}
