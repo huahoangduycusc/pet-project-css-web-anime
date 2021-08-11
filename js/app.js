@@ -1,39 +1,39 @@
 let navText = ["<i class='bx bx-chevron-left'></i>", "<i class='bx bx-chevron-right'></i>"]
 $('.slides-top-news').owlCarousel({
-    items: 2,
-    dots: false,
-    nav: true,
-    navText: navText,
-    margin: 15,
-    responsive: {
-        500: {
-            items: 1
-        },
-        1280: {
-            items: 2
-        },
-        1600: {
-            items: 2
-        }
+  items: 2,
+  dots: false,
+  nav: true,
+  navText: navText,
+  margin: 15,
+  responsive: {
+    500: {
+      items: 1
+    },
+    1280: {
+      items: 2
+    },
+    1600: {
+      items: 2
     }
+  }
 });
 $('.slides-video-news').owlCarousel({
-    items: 2,
-    dots: false,
-    nav: true,
-    navText: navText,
-    margin: 15,
-    responsive: {
-        500: {
-            items: 2
-        },
-        1280: {
-            items: 4
-        },
-        1600: {
-            items: 5
-        }
+  items: 2,
+  dots: false,
+  nav: true,
+  navText: navText,
+  margin: 15,
+  responsive: {
+    500: {
+      items: 2
+    },
+    1280: {
+      items: 4
+    },
+    1600: {
+      items: 5
     }
+  }
 });
 $(document).ready(function () {
 
@@ -50,4 +50,43 @@ $(document).ready(function () {
     return false;
   });
 
+});
+
+/// open search
+$(".search-open").on('click', function (e) {
+  e.preventDefault();
+  $(".search-overlay").addClass("active");
+});
+$(".search-close").on('click', function (e) {
+  $(".search-overlay").removeClass("active");
+});
+// toggle menu bar
+$(".menu-bar").on('click', function (e) {
+  $(this).toggleClass("active");
+  $(".nav-container").toggleClass("active");
+  $(".menu-overlay").toggleClass("active");
+});
+// close menu bar
+$(".menu-overlay").on('click', function (e) {
+  $(".menu-bar").removeClass("active");
+  $(".nav-container").removeClass("active");
+  $(".menu-overlay").removeClass("active");
+});
+
+var flagChild = false;
+$(".has-child").on('click', function (e) {
+  e.preventDefault();
+  $child = $(this).find(".menu-mobile");
+  var height = $child.prop('scrollHeight');
+  if (flagChild) {
+    $child.css('height', height);
+    $(this).find(".bx").css('transform', 'rotate(180deg)');
+    $(this).find(".bx").css('transition', 'all 0.3s ease');
+  }
+  else {
+    $(this).find(".bx").css('transform', 'rotate(0deg)');
+    $(this).find(".bx").css('transition', 'all 0.3s ease');
+    $child.css('height', 0);
+  }
+  flagChild = !flagChild;
 });
