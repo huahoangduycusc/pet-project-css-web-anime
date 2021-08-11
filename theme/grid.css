@@ -1,11 +1,11 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    width: 100%;
 }
 
 [class*="col-"] {
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .col-1 {
@@ -158,4 +158,11 @@
     .col-sm-12 {
         width: 100%;
     }
+}
+.flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
 }
