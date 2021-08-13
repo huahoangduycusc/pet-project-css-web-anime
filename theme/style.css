@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   overflow-x: hidden;
   width: 100%;
@@ -120,7 +120,7 @@ header .header-container .header-content .nav-container .nav-menu .nav-menu-item
 header .header-container .header-content .nav-container .nav-menu .nav-menu-item .nav-link i {
   display: inline-block;
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 header .header-container .header-content .nav-container .nav-menu .nav-menu-item .nav-link:hover {
@@ -419,7 +419,7 @@ header .header-container .header-content .menu-bar {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 3px;
     top: -10px;
@@ -431,7 +431,7 @@ header .header-container .header-content .menu-bar {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 3px;
     background-color: #f63a3a;
@@ -647,7 +647,7 @@ section {
 }
 
 .widget-title::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 30px;
   background-color: #f63a3a;
@@ -684,7 +684,8 @@ section {
   right: 5px;
 }
 
-.carousel-nav-center .owl-nav .owl-prev.disabled, .carousel-nav-center .owl-nav .owl-next.disabled {
+.carousel-nav-center .owl-nav .owl-prev.disabled,
+.carousel-nav-center .owl-nav .owl-next.disabled {
   display: none;
 }
 
@@ -747,7 +748,7 @@ section {
 .list-category .list-categories .list-category-item span {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-weight: 500;
   display: inline-block;
   font-size: 1.4rem;
@@ -773,6 +774,7 @@ section {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -844,7 +846,7 @@ section {
 }
 
 .wrapper-recent-post .wrapper-recent-images a img {
-  width: 140px;
+  width: 170px;
 }
 
 .wrapper-recent-post .wrapper-recent-images .rank {
@@ -909,6 +911,7 @@ section {
           flex-direction: row;
   background-color: #f7f7f7;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .wrapper-latest-post .wrapper-latest-thumb {
@@ -1083,7 +1086,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   padding-left: 10px;
-  padding-right: 10pxh;
+  padding-right: 10px;
 }
 
 .anime-header .anime-header-wrapper {
@@ -1115,8 +1118,12 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(26, 13, 46, 0.8);
+  background-color: rgba(26, 13, 46, 0.9);
   z-index: 1;
+}
+
+.anime-header.bg-profile {
+  height: 350px;
 }
 
 .anime-article-content {
@@ -1239,19 +1246,19 @@ section {
   padding-bottom: 5px;
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-title {
+.author-social-title {
   margin-left: 1px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   color: #9f9f9f;
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-title::after {
+.author-social-title::after {
   content: url("/images/share-arrow.png");
   display: inline-block;
   margin: 0 4px;
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-link a {
+.author-social-link a {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -1263,22 +1270,22 @@ section {
   margin-right: 5px;
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-link a:hover {
+.author-social-link a:hover {
   color: #fff;
   border-color: #fff;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-link .author-twitter:hover {
+.author-social-link .author-twitter:hover {
   background-color: #18a6f0;
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-link .author-facebook:hover {
+.author-social-link .author-facebook:hover {
   background-color: #4661c5;
 }
 
-.anime-article-content .author-article-info .author-info-content .author-info-social .author-social-link .author-instagram:hover {
+.author-social-link .author-instagram:hover {
   background-color: #f36fb7;
 }
 
@@ -1587,6 +1594,7 @@ section {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
+  font-size: 1.6rem;
   margin-bottom: 5px;
 }
 
@@ -1625,6 +1633,308 @@ section {
 
 .share-linked {
   background-color: #007bb5 !important;
+}
+
+.contact-text {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.contact-info .contact-item .contact-icon {
+  width: 60px;
+  height: 60px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.contact-info .contact-item .contact-icon i {
+  font-size: 2.4rem;
+  color: #f63a3a;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-info .contact-item .contact-content h2 {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.contact-info .contact-item .contact-content {
+  width: calc(100% - 90px);
+}
+
+.contact-info .contact-item:hover .contact-icon {
+  overflow: hidden;
+}
+
+.contact-info .contact-item:hover .contact-icon i {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.contact-info .contact-item:hover .contact-content h2 {
+  color: #f63a3a;
+}
+
+.box-contact {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+.box-contact .box-contact-title h2 {
+  font-size: 2.6rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.box-contact .box-contact-form .box-contact-input {
+  margin-top: 15px;
+}
+
+.form-control {
+  width: 100%;
+  display: block;
+  height: 50px;
+  max-width: 100%;
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  outline: none;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #ffffff;
+  border: 1px solid #dedede;
+}
+
+textarea.form-control {
+  height: 100%;
+}
+
+.btn {
+  outline: none;
+  min-width: 120px;
+  text-align: center;
+  display: inline-block;
+  background-color: #212121;
+  color: #fff;
+  border: 1px solid transparent;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f63a3a;
+}
+
+.profile-author-header {
+  background-image: url("/images/nagato.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.profile-author-header .anime-header-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 13, 46, 0.9);
+  z-index: 1;
+}
+
+.profile-author {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.profile-author .profile-author-avatar {
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-author .profile-author-avatar .profile-author-img {
+  text-align: center;
+}
+
+.profile-author .profile-author-avatar .profile-author-img img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.profile-author .profile-author-avatar .profile-author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.profile-author .profile-author-avatar .profile-author-info .profile-author-info_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+.profile-author .profile-author-avatar .profile-author-info .profile-author-info_detail .count-number {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.profile-author .profile-author-avatar .profile-author-info .profile-author-info_detail .count-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.profile-author .profile-author-des {
+  width: 70%;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.profile-author .profile-author-des .profile-author-name {
+  margin-bottom: 10px;
+}
+
+.profile-author .profile-author-des .profile-author-name h2 {
+  font-size: 2.8rem;
+}
+
+.profile-author .profile-author-des .profile-author-about {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.profile-author .profile-author-des .author-info-social {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.profile-author .profile-author-des .author-info-social .author-social-title {
+  color: #fff;
+}
+
+.profile-author .profile-author-des .author-info-social .author-social-link a {
+  border-color: #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-author .profile-author-avatar {
+    width: 100%;
+  }
+  .profile-author .profile-author-avatar .profile-author-img img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile-author .profile-author-avatar .profile-author-info {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile-author .profile-author-avatar .profile-author-info .profile-author-info_detail .count-number {
+    font-size: 2.1rem;
+  }
+  .profile-author .profile-author-avatar .profile-author-info .profile-author-info_detail .count-title {
+    font-size: 1.5rem;
+  }
+  .profile-author .profile-author-des {
+    width: 100%;
+  }
+  .profile-author .profile-author-des .profile-author-name h2 {
+    font-size: 2.4rem;
+  }
 }
 
 .scrollup {
@@ -1669,6 +1979,7 @@ section {
 
 footer {
   width: 100%;
+  margin-top: 40px;
 }
 
 footer .footer-container {
@@ -1740,7 +2051,7 @@ footer .footer-container .footer-content .footer-header {
 .copyright {
   text-align: center;
   color: #888;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 .signature img {
