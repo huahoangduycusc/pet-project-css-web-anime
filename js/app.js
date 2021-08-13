@@ -6,6 +6,12 @@ $('.slides-top-news').owlCarousel({
   navText: navText,
   margin: 15,
   responsive: {
+    300: {
+      items: 1
+    },
+    400: {
+      items: 1
+    },
     500: {
       items: 1
     },
@@ -24,6 +30,9 @@ $('.slides-video-news').owlCarousel({
   navText: navText,
   margin: 15,
   responsive: {
+    300: {
+      items: 1
+    },
     500: {
       items: 2
     },
@@ -32,6 +41,27 @@ $('.slides-video-news').owlCarousel({
     },
     1600: {
       items: 5
+    }
+  }
+});
+$('.slides-weekly-rankings').owlCarousel({
+  items: 2,
+  dots: false,
+  nav: true,
+  navText: navText,
+  margin: 15,
+  responsive: {
+    300: {
+      items: 1
+    },
+    500: {
+      items: 2
+    },
+    1280: {
+      items: 4
+    },
+    1600: {
+      items: 4
     }
   }
 });
@@ -75,8 +105,8 @@ $(".menu-overlay").on('click', function (e) {
 
 var flagChild = false;
 $(".has-child").on('click', function (e) {
-  e.preventDefault();
   $child = $(this).find(".menu-mobile");
+  $(".menu-desktop").toggleClass("open");
   var height = $child.prop('scrollHeight');
   if (flagChild) {
     $child.css('height', height);
