@@ -1332,6 +1332,10 @@ section {
 }
 .share-twitter {
   background-color: #18a6f0 !important;
+  &:hover{
+      background-color: #094e74 !important;
+      border-color: #094e74 !important;
+  }
 }
 .share-facebook {
   background-color: #4661c5 !important;
@@ -1469,6 +1473,27 @@ textarea.form-control {
     z-index: 1;
   }
 }
+.btn-radius{
+    padding: 9px 24px;
+    border-radius: 999px;
+    background-color: $hover-color;
+    color: #fff;
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    font-weight: 600;
+    i{
+        margin-right: 2px;
+        font-size: 2rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:hover{
+        background-color: #212121;
+        border-color: #fff;
+    }
+}
 .profile-author {
   position: relative;
   z-index: 2;
@@ -1480,6 +1505,9 @@ textarea.form-control {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px 10px;
+  a{
+      color: #fff;
+  }
   .profile-author-avatar {
     width: 30%;
     justify-content: center;
@@ -1514,6 +1542,10 @@ textarea.form-control {
         }
       }
     }
+    .author-profile-follow{
+        margin-top: 10px;
+        text-align: center;
+    }
   }
   .profile-author-des {
     width: 70%;
@@ -1534,9 +1566,14 @@ textarea.form-control {
       color: #fff;
       .author-social-title {
         color: #fff;
+        font-size: 1.7rem;
       }
       .author-social-link {
         a {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 2.2rem;
           border-color: #fff;
           color: #fff;
         }
@@ -1578,6 +1615,42 @@ textarea.form-control {
       }
     }
   }
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+.top-left{
+    top: 10px;
+    left: 10px;
+}
+.author-post{
+    margin-bottom: 10px;
+    .author-post-thumbnail{
+        overflow: hidden;
+        a{
+            img{
+                transition: transform 0.3s ease;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.3);
+                }
+            }
+        }
+
+    }
+    .author-post-info{
+        h2{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
 }
 // =======================  footer ===================
 .scrollup {
