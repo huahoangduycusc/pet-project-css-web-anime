@@ -403,14 +403,14 @@ section {
 }
 .section-bg {
   width: 100%;
-  background-image: url("./images/itachi.jpg");
+  background-image: url("/images/itachi.jpg");
   background-position: top center;
   background-size: cover;
   padding: 15px 0;
 }
 .section-bg-1 {
   width: 100%;
-  background-image: url("./images/nagato.jpg");
+  background-image: url("/images/nagato.jpg");
   background-position: top center;
   background-size: cover;
   padding: 15px 0;
@@ -888,7 +888,7 @@ section {
 }
 // ========================== article ======================================
 .anime-header {
-  background-image: url("./images/article-span.jpg");
+  background-image: url("/images/article-span.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1023,7 +1023,7 @@ section {
   font-family: "Permanent Marker", cursive;
   color: #9f9f9f;
   &::after {
-    content: url("./images/share-arrow.png");
+    content: url("/images/share-arrow.png");
     display: inline-block;
     margin: 0 4px;
   }
@@ -1453,7 +1453,7 @@ textarea.form-control {
 }
 // ================== profile author =================
 .profile-author-header {
-  background-image: url("./images/nagato.jpg");
+  background-image: url("/images/nagato.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
