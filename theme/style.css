@@ -115,6 +115,10 @@ header .header-container .header-content .nav-container .nav-menu .nav-menu-item
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 header .header-container .header-content .nav-container .nav-menu .nav-menu-item .nav-link i {

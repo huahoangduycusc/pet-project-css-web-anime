@@ -103,7 +103,7 @@ $(".menu-overlay").on('click', function (e) {
   $(".menu-overlay").removeClass("active");
 });
 
-var flagChild = false;
+var flagChild = true;
 $(".has-child").on('click', function (e) {
   $child = $(this).find(".menu-mobile");
   $(".menu-desktop").toggleClass("open");
